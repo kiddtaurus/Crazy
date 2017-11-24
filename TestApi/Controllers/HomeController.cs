@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TestApi.Models;
 
 namespace TestApi.Controllers
 {
@@ -11,6 +12,8 @@ namespace TestApi.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "修改此模板以快速启动你的 ASP.NET MVC 应用程序。";
+
+            new Class1().c();
 
             return View();
         }

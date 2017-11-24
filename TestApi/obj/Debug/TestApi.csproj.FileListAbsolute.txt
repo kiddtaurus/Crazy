@@ -61,3 +61,11 @@ D:\WorkBase\`_project\TestApi\TestApi\bin\zh-Hans\WebMatrix.WebData.resources.dl
 D:\WorkBase\`_project\TestApi\TestApi\obj\Debug\TestApi.csprojResolveAssemblyReference.cache
 D:\WorkBase\`_project\TestApi\TestApi\obj\Debug\TestApi.dll
 D:\WorkBase\`_project\TestApi\TestApi\obj\Debug\TestApi.pdb
+D:\WorkBase\`_project\TestApi\TestApi\bin\MongoDB.Bson.dll
+D:\WorkBase\`_project\TestApi\TestApi\bin\MongoDB.Driver.dll
+D:\WorkBase\`_project\TestApi\TestApi\bin\PubComp.NoSql.Core.dll
+D:\WorkBase\`_project\TestApi\TestApi\bin\PubComp.NoSql.MongoDbDriver.dll
+D:\WorkBase\`_project\TestApi\TestApi\bin\MongoDB.Bson.xml
+D:\WorkBase\`_project\TestApi\TestApi\bin\MongoDB.Driver.xml
+D:\WorkBase\`_project\TestApi\TestApi\bin\PubComp.NoSql.Core.pdb
+D:\WorkBase\`_project\TestApi\TestApi\bin\PubComp.NoSql.MongoDbDriver.pdb
