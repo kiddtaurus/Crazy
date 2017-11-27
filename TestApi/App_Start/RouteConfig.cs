@@ -18,6 +18,14 @@ namespace TestApi
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "Api",
+                url: "{controller}/{action}/{id}"
+            );
+            routes.MapRoute(
+                name: "Api2",
+                url: "{controller}/{action}/{a}/{b}"
+            );
         }
     }
 }
