@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -30,6 +30,16 @@ namespace TestApi.Controllers
             ViewBag.Message = "你的联系方式页。";
 
             return View();
+        }
+        
+        public string TestApi()
+        {
+            return "abcdefg";
+        }
+
+        public string TestApi2(string a, string b)
+        {
+            return "abcdefg  " + a + "  " + b;
         }
     }
 }
