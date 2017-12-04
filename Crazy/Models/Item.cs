@@ -7,6 +7,11 @@ namespace Crazy.Models
 {
     public class Item : BaseModel
     {
+        //https://stackoverflow.com/questions/5505591/how-to-registerclassmap-for-all-classes-in-a-namespace-for-mongodb
+        //[BsonId] // mark property as _id
+        //[BsonElement("SomeAnotherName", Order = 1)] //set property name , order
+        //[BsonIgnoreExtraElements] // ignore extra elements during deserialization
+        //[BsonIgnore] // ignore property on insert
         public int No { get; set; }
         public string R1 { get; set; }
         public string R2 { get; set; }
