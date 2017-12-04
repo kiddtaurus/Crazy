@@ -22,7 +22,7 @@ namespace Crazy.Controllers
 
         public JsonResult SaveList(List<Item> list)
         {
-
+            var lists = ItemDB.GetAll();
 
             return Json("", JsonRequestBehavior.AllowGet);
         }
