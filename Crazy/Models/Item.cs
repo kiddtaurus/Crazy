@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Crazy.Models
 {
-    public class Item
+    public class Item : BaseModel
     {
         public int No { get; set; }
         public string R1 { get; set; }
@@ -15,8 +15,10 @@ namespace Crazy.Models
         public string R5 { get; set; }
         public string R6 { get; set; }
         public string B { get; set; }
+        public int Money { get; set; }
 
         public Item(int no, string r1, string r2, string r3, string r4, string r5, string r6, string b)
+            : base()
         {
             No = no;
             R1 = r1;

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Http;
 using System.Web.Mvc;
 using Crazy.DB;
 using Crazy.Models;
@@ -11,15 +10,17 @@ namespace Crazy.Controllers
 {
     public class ApiController : Controller
     {
-        //
-        // GET: /Api/
-
         public ActionResult Index()
         {
             return View("Api");
         }
 
-        public JsonResult SaveList([FromBody] List<Item> list)
+        public ActionResult Test()
+        {
+            return View();
+        }
+
+        public JsonResult SaveList(List<Item> list)
         {
 
 
@@ -32,8 +33,8 @@ namespace Crazy.Controllers
             
             return Json(list, JsonRequestBehavior.AllowGet);
         }
-
-        public JsonResult Get()
+        
+        public JsonResult GetAllById(string id)
         {
             var list = ItemDB.GetAll();
 
