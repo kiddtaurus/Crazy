@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Crazy.Models
+namespace Crazy.Models.DoubleColorBall
 {
-    public class Item : BaseModel
+    public class DCBItemModel : BaseModel
     {
         //https://stackoverflow.com/questions/5505591/how-to-registerclassmap-for-all-classes-in-a-namespace-for-mongodb
         //[BsonId] // mark property as _id
@@ -22,7 +22,7 @@ namespace Crazy.Models
         public string B { get; set; }
         public int Money { get; set; }
 
-        public Item(int no, string r1, string r2, string r3, string r4, string r5, string r6, string b)
+        public DCBItemModel(int no, string r1, string r2, string r3, string r4, string r5, string r6, string b)
             : base()
         {
             No = no;

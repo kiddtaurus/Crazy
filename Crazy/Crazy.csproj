@@ -158,6 +158,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ApiController.cs" />
+    <Compile Include="Controllers\DoubleColorBallController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DB\BaseDB.cs" />
     <Compile Include="DB\ItemDB.cs" />
@@ -165,7 +166,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BaseModel.cs" />
-    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\DoubleColorBall\DCBItemModel.cs" />
+    <Compile Include="Models\DoubleColorBall\DCBMissModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +188,7 @@
     </Content>
     <Content Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\DoubleColorBall\AddDCBItem.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -212,6 +215,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Api\Api.cshtml" />
     <Content Include="Views\Api\Test.cshtml" />
+    <Content Include="Views\DoubleColorBall\AddDCBItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

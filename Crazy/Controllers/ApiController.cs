@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Crazy.DB;
-using Crazy.Models;
+using Crazy.Models.DoubleColorBall;
 
 namespace Crazy.Controllers
 {
@@ -20,7 +20,7 @@ namespace Crazy.Controllers
             return View();
         }
 
-        public JsonResult SaveList(List<Item> list)
+        public JsonResult SaveList(List<DCBItemModel> list)
         {
             var lists = ItemDB.GetAll();
 
