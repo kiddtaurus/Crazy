@@ -23,3 +23,14 @@
 
 <h2>api</h2>
 <a href='http://hq.sinajs.cn/list=sh002530'>002530</a>
+
+$.ajax({
+        type: "GET",
+        url: "http://hq.sinajs.cn/list=sh002530",
+        dataType: "json",
+        contentType: 'application/json;charset=gb2312;'
+    }).success(function (res) {
+        alert(res);
+    }).error(function (xhr, status) {
+        alert(xhr);
+    });
