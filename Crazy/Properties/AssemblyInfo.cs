@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Crazy")]
-[assembly: AssemblyCopyright("版权所有(C)  2017")]
+[assembly: AssemblyCopyright("版权所有(C)  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于 typelib 的 ID
-[assembly: Guid("78df41c9-7734-4ddb-93a2-eb5fac37968e")]
+[assembly: Guid("8c3f5826-6bcd-400f-9001-91b6a151e01b")]
 
 // 程序集的版本信息由下列四个值组成:
 //

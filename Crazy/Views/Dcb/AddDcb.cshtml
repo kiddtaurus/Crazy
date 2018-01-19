@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "AddDcb";
+}
+
+<h2>AddDcb</h2>
+
+<table>
+    <tr>
+        <td><input data-bind="value: item.R1" /></td>
+        <td><input data-bind="value: item.R2" /></td>
+        <td><input data-bind="value: item.R3" /></td>
+        <td><input data-bind="value: item.R4" /></td>
+        <td><input data-bind="value: item.R5" /></td>
+        <td><input data-bind="value: item.R6" /></td>
+        <td><input data-bind="value: item.B" /></td>
+        <td>@* <button data-bind="click: AddDcb">添加</button>*@
+            
+            <button data-bind="click: addDcb">添加</button></td>
+    </tr>
+    <tr><td><br /></td></tr>
+    <tr>
+        <td><input data-bind="value: itemStr" /></td>
+        <td><button data-bind="click: addDcbStr">添加</button></td>
+    </tr>
+</table>
+
+
+<script src="~/JS/Dcb/AddDcb.js"></script>
