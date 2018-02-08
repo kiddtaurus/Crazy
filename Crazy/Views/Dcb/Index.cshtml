@@ -1,13 +1,48 @@
-﻿@{
-    ViewBag.Title = "Home Page2";
-}
-
+﻿
 
 
 
 <input data-bind="value: item.L1" />
 <input data-bind="value: item.L2" />
 
+<br/>
+
+
+
+<table data-bind="with: dcbItem">
+    <tr>
+        <td>
+            <input data-bind="value: No" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input data-bind="value: R1" />
+        </td>
+        <td>
+            <input data-bind="value: R2" />
+        </td>
+        <td>
+            <input data-bind="value: R3" />
+        </td>
+        <td>
+            <input data-bind="value: R4" />
+        </td>
+        <td>
+            <input data-bind="value: R5" />
+        </td>
+        <td>
+            <input data-bind="value: R6" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input data-bind="value: B" />
+        </td>
+    </tr>
+</table>
+
 <button data-bind="click: createProfile">aaa</button>
+
 
 <script src="~/JS/Dcb/Index.js"></script>

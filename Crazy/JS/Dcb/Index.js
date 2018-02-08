@@ -19,7 +19,18 @@ var User = function (id, name) {
     };
 };
 
-var ProfilesViewModel2 = function () {
+var DcbItem = function (item) {
+    this.No = ko.observable(item ? item.No : 111);
+    this.R1 = ko.observable(item ? item.R1 : 1);
+    this.R2 = ko.observable(item ? item.R2 : 2);
+    this.R3 = ko.observable(item ? item.R3 : 3);
+    this.R4 = ko.observable(item ? item.R4 : 4);
+    this.R5 = ko.observable(item ? item.R5 : 5);
+    this.R6 = ko.observable(item ? item.R6 : 6);
+    this.B = ko.observable(item ? item.B : 11);
+};
+
+var ProfilesViewModel = function () {
     var self = this;
     //    var refresh = function () {
     //        //self.Profiles(DummyProfile);
@@ -35,12 +46,32 @@ var ProfilesViewModel2 = function () {
 
     //    self.item = new Item();
     self.item = ko.observable(new Item());
+    self.dcbItem = ko.observable(new DcbItem());
 
     self.al = function () {
         alert("a");
     };
     self.createProfile = function () {
         alert("Create a new profile" + self.item.L1 + "|");
+
+        var dcbItem = self.dcbItem();
+        $.ajax({
+            type: "POST",
+            url: "/Dcb/Insert",
+            async: false,
+            data: JSON.stringify(ko.toJS(dcbItem)),
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (result) {
+                if (result) {
+                    alert("保存成功！");
+                }
+            },
+            error: function (err) {
+                document.write(err.responseText);
+            },
+            complete: function () { }
+        });
     };
 
 
@@ -67,4 +98,5 @@ var ProfilesViewModel2 = function () {
     };
 };
 
-ko.applyBindings(new ProfilesViewModel2());
+var viewModel = new ProfilesViewModel();
+ko.applyBindings(viewModel);

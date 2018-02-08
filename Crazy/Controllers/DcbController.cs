@@ -21,7 +21,15 @@ namespace Crazy.Controllers
 
         public JsonResult Insert(DcbItemModel dcbItem)
         {
-            var result = DcbDb.Insert(dcbItem);
+            var result = dcbItem;//DcbDb.Insert(dcbItem);
+            result.No = 111;
+            result.R1 = 1;
+            result.R2 = 2;
+            result.R3 = 3;
+            result.R4 = 4;
+            result.R5 = 5;
+            result.R6 = 6;
+            result.B = 11;
 
             return Json(result, JsonRequestBehavior.AllowGet);
         }
