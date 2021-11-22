@@ -219,6 +219,7 @@
     <Compile Include="Controllers\DcbController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TravelRouteController.cs" />
     <Compile Include="DbUtil\DbBase.cs" />
     <Compile Include="DbUtil\DcbDb.cs" />
     <Compile Include="Global.asax.cs">
@@ -242,6 +243,11 @@
     <Content Include="JS\Dcb\AddDcb.js" />
     <Content Include="JS\Dcb\Index.js" />
     <Content Include="JS\Home\Index.js" />
+    <Content Include="JS\TravelRoute\TravelRoute.js" />
+    <Content Include="Resources\background.jpg" />
+    <Content Include="Resources\bottom.jpg" />
+    <Content Include="Resources\jiantou.jpg" />
+    <Content Include="Resources\top.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\angular-chart.js" />
@@ -305,6 +311,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Dcb\Index.cshtml" />
     <Content Include="Views\Dcb\AddDcb.cshtml" />
+    <Content Include="Views\TravelRoute\Index.cshtml" />
+    <Content Include="Views\TravelRoute\_TravelRouteLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
